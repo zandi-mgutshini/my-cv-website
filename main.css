@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Unbounded&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #061A40;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px 40px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Unbounded", Georgia, sans-serif;
+  position: relative;
+}
+
+.text-unmuted {
+  color: #A0006D;
+  opacity: 0.5;
+  cursor: default;
+}
+
+#profilePicture {
+  text-align: center;
+  align-self: normal;
+  position: relative;
+}
+
+.row.g-0 {
+  text-align: center;
+  align-self: normal;
+  position: relative;
+  overflow: hidden;
+}
+
+.sliding-background-wrapper {
+  overflow: hidden;
+}
+
+.sliding-background {
+  opacity: 0.5;
+  background: url(programming-by-mohammad-rahmani-unsplash.jpg) repeat;
+  background-size: cover;
+  height: 2000px;
+  width: 100%;
+  position: absolute;
+  animation: slide 60s linear infinite;
+  z-index: -6;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, -1000px, 0);
+  }
+}
+#profilePictureTextContainer {
+  padding: 20px 40px;
+}
+
+.wiggle {
+  animation: wiggle 0.5s ease-in-out;
+  transform-origin: center;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(2deg);
+  }
+  50% {
+    transform: rotate(-2deg);
+  }
+  75% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+#profilePictureTextContainer h2 {
+  text-align: center;
+}
+
+.social-button-container {
+  font-size: larger;
+}
+
+.social-button-container a {
+  text-decoration: none;
+}
+
+.social-button-container i {
+  margin: 5px 5px;
+}
+
+.github-button:link, .linkedin-button:link, .behance-button:link, .email-button:link,
+.github-button:visited, .linkedin-button:visited, .behance-button:visited, .email-button:visited {
+  color: #4A8BDF;
+  background-color: rgba(74, 139, 223, 0.2);
+  border-radius: 100%;
+  border: transparent solid 2px;
+  text-decoration: none;
+  font-size: large;
+  padding: 4px 4px;
+}
+
+.quick-download-button:link, .quick-download-button:visited {
+  color: #FBD078;
+  background-color: rgba(251, 207, 120, 0.262745098);
+  border-radius: 100%;
+  border: transparent solid 2px;
+  text-decoration: none;
+  font-size: large;
+  padding: 4px 4px;
+}
+
+.quick-download-button:hover {
+  color: #20D39E;
+  background-color: rgba(32, 211, 157, 0.3058823529);
+  border: transparent solid 2px;
+  border-bottom: #20D39E solid 2px;
+}
+
+.github-button:hover, .linkedin-button:hover, .behance-button:hover, .email-button:hover {
+  color: #A0006D;
+  background-color: rgba(160, 0, 109, 0.1098039216);
+  border: transparent solid 2px;
+  border-bottom: #A0006D solid 2px;
+}
+
+#profilePictureImage {
+  padding-top: 20px;
+  width: 35%;
+  opacity: 0.3;
+  display: none;
+}
+
+div.col.about-me-box {
+  background-color: rgba(74, 139, 223, 0.2);
+  color: #ffffff;
+  padding: 20px 40px;
+  position: relative;
+  text-align: left;
+}
+
+div.col.about-me-box h2 {
+  color: #4A8BDF;
+}
+
+#accordionCurriculumVitae {
+  margin: 40px 0px;
+  padding: 0px 0px;
+  width: 100%;
+  background-color: rgba(74, 139, 223, 0.2);
+  border-color: transparent;
+}
+
+.accordion, .accordion-item, .accordion-header, dl, .accordion-button {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+div.accordion-body, div.accordion {
+  color: #ffffff;
+}
+
+#headingFiveDownload {
+  margin-top: 0;
+  background-image: none;
+}
+
+.accordion-button.collapsed {
+  border-left: 5px solid transparent;
+  border-collapse: collapse;
+}
+
+.accordion-button::after {
+  background-image: url(chevron-down.png);
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url(chevron-down.png);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: rgba(74, 139, 223, 0.2);
+  box-shadow: inset 0 -1px 0 rgba(74, 139, 223, 0.2);
+  color: #4A8BDF;
+  border-left: 5px solid #4A8BDF;
+}
+
+.accordion-button:focus {
+  box-shadow: 1px 2px 3px rgba(74, 139, 223, 0.2);
+}
+
+.accordion-button.collapsed:hover {
+  background-color: rgba(74, 139, 223, 0.2);
+  border-left: 5px solid rgba(74, 139, 223, 0.2);
+}
+
+#headingFiveDownload .accordion-button.collapsed:hover {
+  color: #ffffff;
+  border-left: 5px solid #A0006D;
+  background-color: rgba(160, 0, 109, 0.1098039216);
+}
+
+#headingFiveDownload .accordion-button.collapsed::after {
+  background-image: none;
+}
+
+h2.accordion-header i,
+#headingFiveDownload i {
+  padding-left: 10px;
+  color: #A0006D;
+}
+
+#headingFiveDownload i {
+  color: #A0006D;
+}
+
+p.education-qualification,
+p.education-place,
+p.education-description,
+ul.education-list {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+p.education-qualification {
+  font-weight: bold;
+}
+
+p.education-place {
+  font-weight: lighter;
+}
+
+.experience-date {
+  line-height: 100%;
+  text-align: left;
+}
+
+.experience-date .fa-arrow-up-long {
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding: 0.2em 1.5em;
+  color: #A0006D;
+}
+
+p.experience-title,
+p.experience-place,
+p.experience-description,
+ul.experience-list {
+  margin: 0 auto;
+  padding: 0 auto;
+}/*# sourceMappingURL=main.css.map */
