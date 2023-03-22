@@ -37,5 +37,5 @@ If installation is completed successfully the main directory should contain the 
 To use this project, open the index.html file using a browser like Chrome or Firefox. The website is made up of a single webpage that navigates to 3 external links and 2 local links- mailto: and a pdf file. 
 
 ## 4. COLLABORATORS 
-This website uses an image by [Mohammad Rahmani on Unsplash](). 
-This website uses Bootstrap 5, Font Awesome Icon Library, and Google Fonts. 
+This website uses an image by [Mohammad Rahmani on Unsplash](https://unsplash.com/photos/N5bT5RctFZ8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText). 
+This website uses jQuery, Bootstrap 5, Font Awesome Icon Library, and Google Fonts. 
