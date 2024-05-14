@@ -1,316 +1,875 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zandi Mgutshini</title>
     <!-- Linking favicon -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <!-- Linking Google Fonts Unbounded -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Unbounded&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unbounded&display=swap"
+      rel="stylesheet"
+    />
     <!-- Linking  bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <!-- Linking stylesheet main.css -->
-    <link href="main.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet" />
     <!-- Linking jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <!-- Linking main.js file -->
     <script src="main.js"></script>
     <!-- Linking Font Awesome Icon Library -->
-    <script src="https://kit.fontawesome.com/d212f14b68.js" crossorigin="anonymous"></script>
-    
-
-</head>
-<body>
-   
-        <div class="row g-0">
-            <!-- Photo by <a href="https://unsplash.com/@afgprogrammer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mohammad Rahmani</a> on <a href="https://unsplash.com/photos/N5bT5RctFZ8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
-            <div class="sliding-background-wrapper">
-                <div class="sliding-background"></div>
-            </div>
-            <div id="profilePicture" class="col">
-                <img id="profilePictureImage" src="my-profile-photo.png">
-                <div id="profilePictureTextContainer">
-                    <h1>Zandile Mgutshini</h1>
-                    <h2 class="h5 text-muted"> she | her</h2>
-                    <h2 class="h5">Business Intelligence Graduate</h2>
-                    <h3 class="h6 text-muted"> Nationality: South African | Driver's Licence: Code B </h3>
-                </div> 
-                
-                <div class="social-button-container">
-                    <a class="github-button" href="https://github.com/zandi-mgutshini" target="_blank" title="View my Github repositories"><i class="fa-brands fa-github"></i></a>
-                    <a class="linkedin-button" href="https://www.linkedin.com/in/zandi-mgutshini" target="_blank" title="Connect with me on LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                    <!-- <a class="behance-button" href="#" target="_blank" title="See my Bēhance portfolio"><i class="fa-brands fa-behance"></i></a> -->
-                    <a class="email-button" href="mailto:scalier-places.02@icloud.com" target="_blank" title="Send me an email"><i class="fa-regular fa-envelope"></i></a>
-                    <a class="quick-download-button" href="zmgutshini-cv.pdf" target="_blank" title="Download my CV"><i class="fa-solid fa-download"></i></a>
-                </div>
-
-            </div>
-            <div class="col about-me-box">
-                <h2 class="h4">About me</h2>
-                <h3 class=" h6 text-muted">Building software for your marketing needs...</h3>
-                    <p id="profileSummaryParagraph" class="lead">
-                      I am an aspiring Software Engineer with a strong foundation in full-stack web development and a knack for
-                      translating business goals into technical solutions. Armed with a BCom in Management Studies and hands-on
-                      experience in project management, I'm poised to bridge the gap between innovative technology and strategic
-                      market deployment. My unique blend of project management expertise and robust technical skills. My
-                      proficiency in managing complex projects, coupled with my Full Stack Web and Software Engineering
-                      Bootcamp training, enables me to bring a holistic view to tech-driven strategies.  
-                    </p>
-                    <div class="social-button-container">
-                      <a class="technical-button" href="#headingOneTechnicalSkills" title="View my technical skills"><i class="fa-solid fa-laptop-code"></i></a>
-                      <a class="professional-button" href="#headingTwoProfessionalSkills" title="View my professional skills"><i class="fa-solid fa-user-tie"></i></a>
-                      <a class="experience-button" href="#headingThreeExperience" title="View my work experience"><i class="fa-solid fa-briefcase"></i></a>
-                      <a class="education-button" href="#headingFourEducation" title="View my education"><i class="fa-solid fa-user-graduate"></i></a>
-                  </div>
-            </div>
-        </div>
-
-    
-    <div class="accordion accordion-flush" id="accordionCurriculumVitae">
-        <!-- Technical Skills Tab -->
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOneTechnicalSkills">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Technical Skills <i class="fa-solid fa-laptop-code"></i>
-            </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionCurriculumVitae">
-            <div class="accordion-body">
-              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-              <dl class="row">
-                <dt class="col-sm-3">Term</dt>
-                      <dd class="col-sm-9">
-                        <p>Definition for the term.</p>
-                        <p>And some more placeholder definition text.</p>
-                      </dd>
-                    
-                      <dt class="col-sm-3">Another term</dt>
-                      <dd class="col-sm-9">This definition is short, so no extra paragraphs or anything.</dd>
-                    
-                      <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
-                      <dd class="col-sm-9">This can be useful when space is tight. Adds an ellipsis at the end.</dd>
-                    
-                      <dt class="col-sm-3">Nesting</dt>
-                      <dd class="col-sm-9">
-                        <dl class="row">
-                          <dt class="col-sm-4">Nested definition list</dt>
-                          <dd class="col-sm-8">I heard you like definition lists. Let me put a definition list inside your definition list.</dd>
-                        </dl>
-                      </dd>
-              </dl>
-            </div>
-            
-          </div>
-        </div>
-        <!-- Professional Skills Tab-->
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingTwoProfessionalSkills">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Professional Skills <i class="fa-solid fa-user-tie"></i>
-            </button>
-          </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionCurriculumVitae">
-            <div class="accordion-body">
-              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
-          </div>
-        </div>
-        <!-- Exeperience Tab -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThreeExperience">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Experience <i class="fa-solid fa-briefcase"></i>
-            </button>
-            </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionCurriculumVitae">
-            <div class="accordion-body">
-                <dl class="row">
-                    <!-- Project Management Course Tutor -->
-                    <dt class="col-sm-3 experience-date">Jan 2022 <i class="fa-solid fa-arrow-up-long"></i> Aug 2021</dt>
-                    <dd class="col-sm-9">
-                        <p class="experience-title"><strong>Project Management Course Tutor</strong></p>
-                        <p class="experience-place"><em>University of Cape Town</em>, Cape Town, South Africa</p>
-                        <p class="experience-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid magni animi unde odio. Iusto, ab molestias rerum natus voluptatibus perspiciatis facere nam nobis eos optio vel laborum tenetur sunt error.</p>
-                        <ul class="experience-list">
-                            <li>Subject 1</li>
-                            <li>Subject 2</li>
-                            <li>Subject 3</li>
-                        </ul>
-                    </dd>
-                    <!-- Sales Associate -->
-                    <dt class="col-sm-3 experience-date">May 2018 <i class="fa-solid fa-arrow-up-long"></i> Aug 2017</dt>
-                    <dd class="col-sm-9">
-                        <p class="experience-title"><strong>Sales Associate</strong></p>
-                        <p class="experience-place"><em>Missibaba by Chloe</em>, Cape Town, South Africa</p>
-                        <p class="experience-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid magni animi unde odio. Iusto, ab molestias rerum natus voluptatibus perspiciatis facere nam nobis eos optio vel laborum tenetur sunt error.</p>
-                        <ul class="experience-list">
-                            <li>Subject 1</li>
-                            <li>Subject 2</li>
-                            <li>Subject 3</li>
-                        </ul>
-                    </dd>
-                    <!-- Head of Internal Affairs -->
-                    <dt class="col-sm-3 experience-date">Dec 2016<i class="fa-solid fa-arrow-up-long"></i> Jan 2014</dt>
-                    <dd class="col-sm-9">
-                        <p class="experience-title"><strong>Head of Internal Affairs & Executive Board Member</strong></p>
-                        <p class="experience-place"><em>Youth Voices Conference</em>, Pietermaritzburg, South Africa</p>
-                        <p class="experience-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid magni animi unde odio. Iusto, ab molestias rerum natus voluptatibus perspiciatis facere nam nobis eos optio vel laborum tenetur sunt error.</p>
-                        <ul class="experience-list">
-                            <li>Subject 1</li>
-                            <li>Subject 2</li>
-                            <li>Subject 3</li>
-                        </ul>
-                    </dd>
-                </dl>
-            </div>
-          </div>
-        </div>
-        <!-- Education Tab-->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFourEducation">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                Education <i class="fa-solid fa-user-graduate"></i>
-              </button>
-            </h2>
-            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionCurriculumVitae">
-              <div class="accordion-body">
-                <dl class="row">
-                  <!-- Education > Hyperion Dev -->
-                    <dt class="col-sm-3 education-date">2022 - Present</dt>
-                    <dd class="col-sm-9">
-                        <p class="education-qualification"><strong>Full Stack Web Development & Software Engineering Certificate</strong></p>
-                        <p class="education-place"><em>HyperionDev</em>, Cape Town, South Africa</p>
-                        <p class="education-description">The bootcamp emphasizes practical, hands-on learning, which has allowed me to build a solid foundation in both front-end and back-end development techniques. My capstone project involves deploying a fully functional web application that incorporates user authentication, database interactions, and responsive design.</p>
-                        <ul class="education-list">
-                            <li><strong class="intext-strong"> Web development: </strong>
-                              Proficient in HTML, CSS, SCSS, and JavaScript for building web pages
-                              and enhancing user interfaces.
-                            </li>
-                            <li><strong class="intext-strong">Object-Oriented Programming (OOP):</strong>
-                              Mastered OOP principles, including inheritance and
-                              creating modular, reusable code.
-                            </li>
-                            <li><strong class="intext-strong">Database Management: </strong>
-                              Acquired knowledge of SQL, database design, and interaction with SQL Server databases.
-                            </li>
-                            <li><strong class="intext-strong">Version Control: </strong>
-                              Learned Git and GitHub for efficient version control and collaboration with development teams.
-                            </li>
-                            <li><strong class="intext-strong">Full Stack Development: </strong>
-                              Explored full-stack web development with the MERN (MongoDB,
-                              Express, React, Node.js) stack, enabling the creation of dynamic web applications.                            
-                            </li>
-                            <li><strong class="intext-strong">Web Application Frameworks: </strong>
-                              Utilised Laravel for PHP web development and Next.js for creating server-rendered React applications.                         
-                            </li>
-                            <li><strong class="intext-strong">Responsive Web Design: </strong>
-                              Gained experience in CSS, SCSS, and customising WordPress
-                              themes to ensure web applications are responsive and user-friendly.                            
-                            </li>
-                            <li><strong class="intext-strong">API Integration: </strong>
-                              Learned to fetch data from remote sources using React and implemented various APIs to enhance web application functionality.                           
-                            </li>
-                            <li><strong class="intext-strong">Error Handling and Testing: </strong>
-                              Practised effective error handling and wrote tests for React
-                              applications using popular testing frameworks.                            
-                            </li>
-                            <li><strong class="intext-strong">Authentication: </strong>
-                              Implemented authentication using JSON Web Tokens (JWT) to enhance web application security.                           
-                            </li>
-                            <li><strong class="intext-strong">Server Deployment: </strong>
-                              Deployed web applications to platforms like Heroku for public access.                            
-                            </li>
-                            <li><strong class="intext-strong">Databases and Database Management: </strong>
-                              Created and managed MongoDB databases and
-                              utilised Mongoose for CRUD operations.                            
-                            </li>
-                            <li><strong class="intext-strong">Software Documentation: </strong>
-                              Explored various forms of software documentation to improve code quality and maintainability.                            
-                            </li>
-                        </ul>
-                    </dd>
-                    
-                    <hr>
-                    <!-- Education > BCom Management Studies UCT-->
-                    <dt class="col-sm-3 education-date">2021</dt>
-                    <dd class="col-sm-9">
-                        <p class="education-qualification"><strong>Bachelor of Commerce specialising in Management Studies</strong></p>
-                        <p class="education-place"><em>University of Cape Town</em>, Cape Town, South Africa</p>
-                        <p class="education-description">
-                          Throughout my studies, I focused on acquiring skills in financial accounting, business finance, and financial reporting, alongside developing a robust analytical framework through courses in statistics and data analysis.
-                        </p>
-                        <p>
-                          The curriculum also covered extensive ground in marketing and people management, enabling me to understand consumer behavior and market dynamics effectively. Courses in Information Systems and Applied Statistics further enhanced my ability to integrate technology and quantitative analysis in business decision-making. My education not only provided me with theoretical knowledge but also stressed practical applications and problem-solving skills essential for managing and leading in diverse organizational settings.
-                        </p>
-                        <ul class="education-list">
-                            <li><strong class="intext-strong">Statistical Proficiency: </strong>
-                              Acquired advanced skills in Applied Statistics, including Multivariate
-                              Analysis, enabling data-driven decision-making.
-                            </li>
-                            <li><strong class="intext-strong">Market Research Expertise: </strong>
-                              Developed a deep understanding of the consumer market and
-                              honed research skills in Marketing Research, both quantitative and qualitative.</li>
-                            <li><strong class="intext-strong">Science Background: </strong>
-                              Enhanced critical thinking through courses in Chemistry and Biology.
-                            </li>
-                            <li><strong class="intext-strong">Financial Expertise: </strong>
-                              Gained in-depth knowledge in Financial Accounting, Business Finance, and Financial Reporting.
-                            </li>
-                            <li><strong class="intext-strong">Economic Insights: </strong>
-                              Developed a comprehensive understanding of both Microeconomics and
-                              Macroeconomics.
-                            </li>
-                            <li><strong class="intext-strong">Data Analysis: </strong>
-                              Analytical skills in Statistics, including modelling and forecasting.
-                            </li>
-                            <li><strong class="intext-strong">Marketing Expertise: </strong>
-                              Gained insights into Marketing principles and strategies.
-                            </li>
-                            <li><strong class="intext-strong">Management Skills: </strong>
-                              Developed proficiency in People Management including conflict resolution resource management and organisational theory.
-                            </li>
-                            <li><strong class="intext-strong">Problem-Solving: </strong>
-                              Acquired the ability to approach real-world challenges with evidence-based solutions.
-                            </li>
-                            <li><strong class="intext-strong">Information Systems: </strong>
-                              Built a solid foundation in Information Systems gaining the ability to effectively manage and integrate technology solutions within business environments to enhance operational efficiency and decision-making.
-                            </li>
-                        </ul>
-                    </dd>
-                    <!-- Education > NSC at St Anne's Diocesan College-->
-                    <dt class="col-sm-3 education-date">2015</dt>
-                    <dd class="col-sm-9">
-                        <p class="education-qualification"><strong>National Senior Certificate (IEB)</strong></p>
-                        <p class="education-place"><em>St Anne's Diocesan College</em>, Hilton, South Africa</p>
-                        <p class="education-description">
-                          I completed my matriculation at St. Anne's Diocesan College, where I was honored as the Head Girl in 2015. I was selected to participate in a foreign exchange program at Charlotte Latin School in North Carolina, USA, in 2013. My academic pursuits included English Home Language, French Second Additional Language, Life Orientation, Life Sciences, Mathematics, Physical Sciences, and isiZulu First Additional Language. This diverse curriculum not only fortified my linguistic and scientific skills but also equipped me with a well-rounded education, preparing me for diverse challenges and global experiences.
-                        </p>
-                        <ul class="education-list">
-                            <li>Head Girl for 2015</li>
-                            <li>Selected for foreign exchange programme to Charlottle Latin School in North Carolina USA in 2013.</li>
-                        </ul>
-                    </dd>
-                  </dl>
-              </div>
-            </div>
-          </div>
-          <!-- Download CV Tab-->
-          <div class="accordion-item">
-            <h2 id="headingFiveDownload">
-              <button class="accordion-button collapsed" type="button">
-                Download CV <i class="fa-solid fa-download"></i>
-              </button>
-            </h2>
-          </div>
+    <script
+      src="https://kit.fontawesome.com/d212f14b68.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="row g-0">
+      <!-- Photo by <a href="https://unsplash.com/@afgprogrammer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mohammad Rahmani</a> on <a href="https://unsplash.com/photos/N5bT5RctFZ8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+      <div class="sliding-background-wrapper">
+        <div class="sliding-background"></div>
       </div>
-      
-    <footer>
-        
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
+      <div id="profilePicture" class="col">
+        <img
+          id="profilePictureImage"
+          alt="Professional headshot of myself, Zandile Mgutshini"
+          src="my-profile-photo.png"
+        />
+        <div id="profilePictureTextContainer">
+          <h1>Zandile Mgutshini</h1>
+          <h2 class="h5 text-muted">she | her</h2>
+          <h2 class="h5">Business Intelligence Graduate</h2>
+          <h3 class="h6 text-muted">
+            Nationality: South African | Driver's Licence: Code B
+          </h3>
+        </div>
+
+        <div class="social-button-container">
+          <a
+            class="github-button"
+            href="https://github.com/zandi-mgutshini"
+            target="_blank"
+            title="View my Github repositories"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            class="linkedin-button"
+            href="https://www.linkedin.com/in/zandi-mgutshini"
+            target="_blank"
+            title="Connect with me on LinkedIn"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <!-- <a class="behance-button" href="#" target="_blank" title="See my Bēhance portfolio"><i class="fa-brands fa-behance"></i></a> -->
+          <a
+            class="email-button"
+            href="mailto:scalier-places.02@icloud.com"
+            target="_blank"
+            title="Send me an email"
+            ><i class="fa-regular fa-envelope"></i
+          ></a>
+          <a
+            class="quick-download-button"
+            href="zmgutshini-cv.pdf"
+            target="_blank"
+            title="Download my CV"
+            ><i class="fa-solid fa-download"></i
+          ></a>
+        </div>
+      </div>
+      <!-- About Me Box -->
+      <div class="col about-me-box">
+        <h2 class="h4">About me</h2>
+        <h3 class="h6 text-muted">
+          Building software for your marketing needs...
+        </h3>
+        <p id="profileSummaryParagraph" class="lead">
+          I am an aspiring Software Engineer with a strong foundation in
+          full-stack web development and a knack for translating business goals
+          into technical solutions. Armed with a BCom in Management Studies and
+          hands-on experience in project management, I'm poised to bridge the
+          gap between innovative technology and strategic market deployment. My
+          unique blend of project management expertise and robust technical
+          skills. My proficiency in managing complex projects, coupled with my
+          Full Stack Web and Software Engineering Bootcamp training, enables me
+          to bring a holistic view to tech-driven strategies.
+        </p>
+        <div class="social-button-container">
+          <a
+            class="technical-button"
+            href="#headingOneTechnicalSkills"
+            title="View my technical skills"
+            ><i class="fa-solid fa-laptop-code"></i
+          ></a>
+          <a
+            class="professional-button"
+            href="#headingTwoProfessionalSkills"
+            title="View my professional skills"
+            ><i class="fa-solid fa-user-tie"></i
+          ></a>
+          <a
+            class="experience-button"
+            href="#headingThreeExperience"
+            title="View my work experience"
+            ><i class="fa-solid fa-briefcase"></i
+          ></a>
+          <a
+            class="education-button"
+            href="#headingFourEducation"
+            title="View my education"
+            ><i class="fa-solid fa-user-graduate"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Accordion Begins -->
+    <div class="accordion accordion-flush" id="accordionCurriculumVitae">
+      <!-- Technical Skills Tab -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOneTechnicalSkills">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            Technical Skills <i class="fa-solid fa-laptop-code"></i>
+          </button>
+        </h2>
+        <div
+          id="collapseOne"
+          class="accordion-collapse collapse show"
+          aria-labelledby="headingOne"
+          data-bs-parent="#accordionCurriculumVitae"
+        >
+          <div class="accordion-body">
+            <strong>This is the first item's accordion body.</strong> It is
+            shown by default, until the collapse plugin adds the appropriate
+            classes that we use to style each element. These classes control the
+            overall appearance, as well as the showing and hiding via CSS
+            transitions. You can modify any of this with custom CSS or
+            overriding our default variables. It's also worth noting that just
+            about any HTML can go within the <code>.accordion-body</code>,
+            though the transition does limit overflow.
+            <dl class="row">
+              <dt class="col-sm-3">Term</dt>
+              <dd class="col-sm-9">
+                <p>Definition for the term.</p>
+                <p>And some more placeholder definition text.</p>
+              </dd>
+
+              <dt class="col-sm-3">Another term</dt>
+              <dd class="col-sm-9">
+                This definition is short, so no extra paragraphs or anything.
+              </dd>
+
+              <dt class="col-sm-3 text-truncate">
+                Truncated term is truncated
+              </dt>
+              <dd class="col-sm-9">
+                This can be useful when space is tight. Adds an ellipsis at the
+                end.
+              </dd>
+
+              <dt class="col-sm-3">Nesting</dt>
+              <dd class="col-sm-9">
+                <dl class="row">
+                  <dt class="col-sm-4">Nested definition list</dt>
+                  <dd class="col-sm-8">
+                    I heard you like definition lists. Let me put a definition
+                    list inside your definition list.
+                  </dd>
+                </dl>
+              </dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+      <!-- Professional Skills Tab-->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwoProfessionalSkills">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo"
+            aria-expanded="false"
+            aria-controls="collapseTwo"
+          >
+            Professional Skills <i class="fa-solid fa-user-tie"></i>
+          </button>
+        </h2>
+        <div
+          id="collapseTwo"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingTwo"
+          data-bs-parent="#accordionCurriculumVitae"
+        >
+          <div class="accordion-body">
+            <strong>This is the second item's accordion body.</strong> It is
+            hidden by default, until the collapse plugin adds the appropriate
+            classes that we use to style each element. These classes control the
+            overall appearance, as well as the showing and hiding via CSS
+            transitions. You can modify any of this with custom CSS or
+            overriding our default variables. It's also worth noting that just
+            about any HTML can go within the <code>.accordion-body</code>,
+            though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+      <!-- Exeperience Tab -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThreeExperience">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseThree"
+            aria-expanded="false"
+            aria-controls="collapseThree"
+          >
+            Experience <i class="fa-solid fa-briefcase"></i>
+          </button>
+        </h2>
+        <div
+          id="collapseThree"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingThree"
+          data-bs-parent="#accordionCurriculumVitae"
+        >
+          <div class="accordion-body">
+            <dl class="row">
+              <!-- Brand building consultant Ja'Dijo-->
+              <dt class="col-sm-3 experience-date">
+                Present <i class="fa-solid fa-arrow-up-long"></i> Jan 2024
+              </dt>
+              <dd class="col-sm-9">
+                <p class="experience-title">
+                  <strong>Brand Building (Consulting)</strong>
+                </p>
+                <p class="experience-place">
+                  <em>Ja'Dijo Restaurant</em>, Bulawayo, Zimbabwe
+                </p>
+                <p class="experience-description">
+                  At Ja'Dijo Restaurant, I played a crucial role in establishing
+                  and promoting the brand by developing and executing
+                  comprehensive branding and marketing strategies. Ja'Dijo is in
+                  the planning phase of establishing a second location in Harare
+                  after a successful launch in Bulawayo.
+                </p>
+                <ul class="experience-list">
+                  <li>
+                    Spearheaded the
+                    <strong class="intext-strong"
+                      >branding and marketing</strong
+                    >
+                    initiatives for Ja'Dijo, a start-up restaurant, transforming
+                    the client's vision into a tangible, customer-facing reality
+                    with a focus on cost-effective solutions.
+                  </li>
+                  <li>
+                    Designed and developed comprehensive menus, promotional
+                    launch posters, and engaging social media content,
+                    significantly contributing to the restaurant's
+                    <strong class="intext-strong"
+                      >identity and customer engagement strategy</strong
+                    >.
+                  </li>
+                  <li>
+                    Employed basic online tools to create
+                    <strong class="intext-strong"
+                      >high-impact visuals and marketing materials</strong
+                    >, ensuring a successful launch within a stringent budget.
+                  </li>
+                  <li>
+                    Currently manage ongoing
+                    <strong class="intext-strong">promotional campaigns</strong>
+                    and content creation, including the conceptualisation of
+                    special events such as a Mother's Day celebration.
+                  </li>
+                </ul>
+              </dd>
+
+              <hr />
+
+              <!-- Independent Contractor Construction Project-->
+              <dt class="col-sm-3 experience-date">
+                Present <i class="fa-solid fa-arrow-up-long"></i> Jun 2023
+              </dt>
+              <dd class="col-sm-9">
+                <p class="experience-title">
+                  <strong>Independent Contractor/Project Manager</strong>
+                </p>
+                <p class="experience-place">
+                  <em>Private Client</em>, Cape Town, South Africa
+                </p>
+                <p class="experience-description">
+                  In my role as an independent contractor, I managed a
+                  comprehensive residential house renovation project for a
+                  UK-based client. I oversaw all project phases, from initiation
+                  and planning through execution, monitoring, and closure,
+                  ensuring alignment with the client's objectives and
+                  constraints. My responsibilities included conducting
+                  feasibility analyses, developing detailed project plans,
+                  sourcing materials, managing contractors, and maintaining
+                  stakeholder relationships. This role demonstrated my
+                  capability to effectively manage complex projects, adhere to
+                  budgets, and deliver high-quality outcomes within specified
+                  timelines.
+                </p>
+                <ul class="experience-list">
+                  <li>
+                    Conducted a thorough project
+                    <strong class="intext-strong">feasibility analysis</strong>
+                    to ensure project alignment with client objectives and
+                    constraints.
+                  </li>
+                  <li>
+                    Established project
+                    <strong class="intext-strong"
+                      >goals, objectives, and scope</strong
+                    >
+                    in consultation with the client.
+                  </li>
+                  <li>
+                    Developed a comprehensive project plan, including timelines,
+                    budgets, and
+                    <strong class="intext-strong">resource allocation</strong>.
+                  </li>
+                  <li>
+                    Oversaw the selection and management of contractors,
+                    ensuring <strong class="intext-strong">quality</strong> work
+                    and adherence to project timelines.
+                  </li>
+                  <li>
+                    <strong class="intext-strong">Managed relationships</strong>
+                    between stakeholders, including the client, house tenant,
+                    rental agency, and construction workers.
+                  </li>
+                  <li>
+                    Coordinated on-site activities and provided direction to
+                    ensure project execution in compliance with project
+                    specifications.
+                  </li>
+                </ul>
+              </dd>
+
+              <hr />
+
+              <!-- Head of Social Media Volunteer -->
+              <dt class="col-sm-3 experience-date">
+                Feb 2024 <i class="fa-solid fa-arrow-up-long"></i> Nov 2023
+              </dt>
+              <dd class="col-sm-9">
+                <p class="experience-title">
+                  <strong>Head of Social Media (Volunteer)</strong>
+                </p>
+                <p class="experience-place">
+                  <em>Social Justice Organisation</em>, Cape Town, South Africa
+                </p>
+                <p class="experience-description">
+                  My expertise in SEO, content creation, and analytics allowed
+                  me to optimise our social media platforms effectively,
+                  enhancing user interaction and campaign performance. This
+                  position honed my abilities in strategic planning, team
+                  leadership, and digital marketing, making a measurable impact
+                  on our online presence.
+                </p>
+                <ul class="experience-list">
+                  <li>
+                    Introduced a dynamic social media strategy that amplified
+                    the campaign's visibility and engagement across global
+                    platforms, achieving a
+                    <strong class="intext-strong"
+                      >1,278% increase in reach</strong
+                    >
+                    and connecting with over 400,000 individuals on Instagram.
+                  </li>
+                  <li>
+                    Led the #JusticeVsGenocide campaign, which involved
+                    coordinating international crowd- sourced messages of
+                    support for the South African legal team at the
+                    International Court of Justice (ICJ). This campaign became a
+                    focal point for global outreach, drawing participation from
+                    across South Africa, Europe, North America, and Oceania.
+                  </li>
+                  <li>
+                    Managed comprehensive
+                    <strong class="intext-strong">content creation</strong> for
+                    Instagram and Facebook, leveraging exclusive media content
+                    from key contacts in Ramallah and Nablus to enhance
+                    authenticity and impact.
+                  </li>
+                  <li>
+                    Directed a cross-functional team in executing high-stakes
+                    <strong class="intext-strong"
+                      >communication strategies</strong
+                    >
+                    that often positioned our content as the top search result
+                    during critical news events, significantly boosting the
+                    campaign's authority on issues related to Palestine.
+                  </li>
+                  <li>
+                    Utilised
+                    <strong class="intext-strong"
+                      >expertise in SEO, digital marketing, and user
+                      experience</strong
+                    >
+                    to refine campaign messaging and outreach tactics, which
+                    greatly increased transparency and reinforced the campaign's
+                    identity as a leading voice on Palestinian issues.
+                  </li>
+                  <li>
+                    Collaborated closely with professionals from various
+                    disciplines including journalism, marketing, event planning,
+                    art, and law, enhancing
+                    <strong class="intext-strong"
+                      >team cohesion and operational efficiency</strong
+                    >.
+                  </li>
+                </ul>
+              </dd>
+
+              <hr />
+
+              <!-- Project Management Course Tutor -->
+              <dt class="col-sm-3 experience-date">
+                Jan 2022 <i class="fa-solid fa-arrow-up-long"></i> Aug 2021
+              </dt>
+              <dd class="col-sm-9">
+                <p class="experience-title">
+                  <strong>Project Management Course Tutor</strong>
+                </p>
+                <p class="experience-place">
+                  <em>University of Cape Town</em>, Cape Town, South Africa
+                </p>
+                <p class="experience-description">
+                  As a Project Management Course Tutor at the University of Cape
+                  Town, I managed online tutorials, graded assignments and
+                  exams, and provided personalised feedback to enhance student
+                  learning outcomes. This role highlighted my skills in
+                  educational delivery, student engagement, and the application
+                  of practical knowledge to real-world scenarios.
+                </p>
+                <ul class="experience-list">
+                  <li>
+                    Developed and implemented
+                    <strong class="intext-strong">lesson plans</strong> to help
+                    students build a strong academic foundation.
+                  </li>
+                  <li>
+                    Managed online tutorials, including grading assignments and
+                    exams, and
+                    <strong class="intext-strong">providing feedback</strong> to
+                    students.
+                  </li>
+                  <li>
+                    Mentored and advised 12 final year students on their
+                    academic and professional development, resulting in a
+                    <strong class="intext-strong">100% pass rate</strong>.
+                  </li>
+                  <li>
+                    Provided
+                    <strong class="intext-strong">technical advice</strong> and
+                    guidance to student teams to ensure successful and timely
+                    execution of projects.
+                  </li>
+                  <li>
+                    Utilised
+                    <strong class="intext-strong">conflict resolution</strong>
+                    strategies to successfully resolve student disputes and
+                    issues during capstone project execution.
+                  </li>
+                </ul>
+              </dd>
+
+              <hr />
+
+              <!-- Sales Associate -->
+              <dt class="col-sm-3 experience-date">
+                May 2018 <i class="fa-solid fa-arrow-up-long"></i> Aug 2017
+              </dt>
+              <dd class="col-sm-9">
+                <p class="experience-title"><strong>Sales Associate</strong></p>
+                <p class="experience-place">
+                  <em>Missibaba by Chloe</em>, Cape Town, South Africa
+                </p>
+                <p class="experience-description">
+                  In my role as a Retail Sales Associate at Missibaba, working
+                  across all three locations—the Watershed, the Bree Street
+                  store, and the Biscuit Mill—I was instrumental in enhancing
+                  store operations and customer service. I efficiently handled
+                  daily store responsibilities, including opening and closing
+                  procedures, and actively engaged with customers to ensure a
+                  positive shopping experience. My duties also involved
+                  analysing store performance trends, managing inventory, and
+                  implementing store layouts and designs that maximised space
+                  utilisation and visual appeal. This position strengthened my
+                  skills in retail management, customer interaction, and
+                  operational efficiency.
+                </p>
+                <ul class="experience-list">
+                  <li>
+                    Created and maintained
+                    <strong class="intext-strong"
+                      >paper and electronic filing</strong
+                    >
+                    systems, resulting in improved organisational efficiency.
+                  </li>
+                  <li>
+                    Analysed
+                    <strong class="intext-strong"
+                      >website and social media analytics</strong
+                    >
+                    to identify trends and opportunities for improvement.
+                  </li>
+                  <li>
+                    Performed daily store
+                    <strong class="intext-strong">opening and closing</strong>
+                    duties, ensuring that all store policies were followed.
+                  </li>
+                </ul>
+              </dd>
+
+              <hr />
+
+              <!-- Head of Internal Affairs -->
+              <dt class="col-sm-3 experience-date">
+                Dec 2016<i class="fa-solid fa-arrow-up-long"></i> Jan 2014
+              </dt>
+              <dd class="col-sm-9">
+                <p class="experience-title">
+                  <strong
+                    >Head of Internal Affairs & Executive Board Member</strong
+                  >
+                </p>
+                <p class="experience-place">
+                  <em>Youth Voices Conference</em>, Pietermaritzburg, South
+                  Africa
+                </p>
+                <p class="experience-description">
+                  As a founding board member of the Youth Voices Conference
+                  initiated in 2014, I played a critical role in creating a
+                  platform for young South Africans to engage in meaningful
+                  discussions about social, political, and economic issues. Our
+                  organisation, driven entirely by youth under the age of 23,
+                  challenged conventional expectations by demonstrating that
+                  young individuals could spearhead significant educational
+                  initiatives. During our inaugural conference in Nottingham
+                  Road, we not only managed logistics such as renting an
+                  auditorium and arranging accommodation but also curated a
+                  diverse lineup of speakers from various fields. This exposed
+                  attendees to advanced concepts, like biomimicry, broadening
+                  their intellectual horizons beyond traditional classroom
+                  learning.
+                </p>
+                <ul class="experience-list">
+                  <li>
+                    Organised a <strong class="intext-strong">large-scale multi-day conferences</strong> with over 80
+                    student attendees, resulting in successful events.
+                  </li>
+                  <li>
+                    Collaborated with external stakeholders to expand the reach
+                    of the NGO's services.
+                  </li>
+                  <li>
+                    Developed <strong class="intext-strong">KPIs to measure operational performance</strong>  and ensure
+                    compliance with organisational goals.
+                  </li>
+                  <li>
+                    Maintained and updated the organisation's operational
+                    processes to ensure <strong class="intext-strong">compliance with legal</strong> and regulatory
+                    requirements.
+                  </li>
+                  <li>
+                    Conducted semi-annual peer reviews to enhance internal performance. 
+                  </li>
+                </ul>
+              </dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+      <!-- Education Tab-->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFourEducation">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseFour"
+            aria-expanded="false"
+            aria-controls="collapseFour"
+          >
+            Education <i class="fa-solid fa-user-graduate"></i>
+          </button>
+        </h2>
+        <div
+          id="collapseFour"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingFour"
+          data-bs-parent="#accordionCurriculumVitae"
+        >
+          <div class="accordion-body">
+            <dl class="row">
+              <!-- Education > Hyperion Dev -->
+              <dt class="col-sm-3 education-date">2022 - Present</dt>
+              <dd class="col-sm-9">
+                <p class="education-qualification">
+                  <strong
+                    >Full Stack Web Development & Software Engineering
+                    Certificate</strong
+                  >
+                </p>
+                <p class="education-place">
+                  <em>HyperionDev</em>, Cape Town, South Africa
+                </p>
+                <p class="education-description">
+                  The bootcamp emphasizes practical, hands-on learning, which
+                  has allowed me to build a solid foundation in both front-end
+                  and back-end development techniques. My capstone project
+                  involves deploying a fully functional web application that
+                  incorporates user authentication, database interactions, and
+                  responsive design.
+                </p>
+                <ul class="education-list">
+                  <li>
+                    <strong class="intext-strong"> Web development: </strong>
+                    Proficient in HTML, CSS, SCSS, and JavaScript for building
+                    web pages and enhancing user interfaces.
+                  </li>
+                  <li>
+                    <strong class="intext-strong"
+                      >Object-Oriented Programming (OOP):</strong
+                    >
+                    Mastered OOP principles, including inheritance and creating
+                    modular, reusable code.
+                  </li>
+                  <li>
+                    <strong class="intext-strong">Database Management: </strong>
+                    Acquired knowledge of SQL, database design, and interaction
+                    with SQL Server databases.
+                  </li>
+                  <li>
+                    <strong class="intext-strong">Version Control: </strong>
+                    Learned Git and GitHub for efficient version control and
+                    collaboration with development teams.
+                  </li>
+                  <li>
+                    <strong class="intext-strong"
+                      >Full Stack Development:
+                    </strong>
+                    Explored full-stack web development with the MERN (MongoDB,
+                    Express, React, Node.js) stack, enabling the creation of
+                    dynamic web applications.
+                  </li>
+                  <li>
+                    <strong class="intext-strong"
+                      >Web Application Frameworks:
+                    </strong>
+                    Utilised Laravel for PHP web development and Next.js for
+                    creating server-rendered React applications.
+                  </li>
+                  <li>
+                    <strong class="intext-strong"
+                      >Responsive Web Design:
+                    </strong>
+                    Gained experience in CSS, SCSS, and customising WordPress
+                    themes to ensure web applications are responsive and
+                    user-friendly.
+                  </li>
+                  <li>
+                    <strong class="intext-strong">API Integration: </strong>
+                    Learned to fetch data from remote sources using React and
+                    implemented various APIs to enhance web application
+                    functionality.
+                  </li>
+                  <li>
+                    <strong class="intext-strong"
+                      >Error Handling and Testing:
+                    </strong>
+                    Practised effective error handling and wrote tests for React
+                    applications using popular testing frameworks.
+                  </li>
+                  <li>
+                    <strong class="intext-strong">Authentication: </strong>
+                    Implemented authentication using JSON Web Tokens (JWT) to
+                    enhance web application security.
+                  </li>
+                  <li>
+                    <strong class="intext-strong">Server Deployment: </strong>
+                    Deployed web applications to platforms like Heroku for
+                    public access.
+                  </li>
+                  <li>
+                    <strong class="intext-strong"
+                      >Databases and Database Management:
+                    </strong>
+                    Created and managed MongoDB databases and utilised Mongoose
+                    for CRUD operations.
+                  </li>
+                  <li>
+                    <strong class="intext-strong"
+                      >Software Documentation:
+                    </strong>
+                    Explored various forms of software documentation to improve
+                    code quality and maintainability.
+                  </li>
+                </ul>
+              </dd>
+
+              <hr />
+              <!-- Education > BCom Management Studies UCT-->
+              <dt class="col-sm-3 education-date">2021</dt>
+              <dd class="col-sm-9">
+                <p class="education-qualification">
+                  <strong
+                    >Bachelor of Commerce specialising in Management
+                    Studies</strong
+                  >
+                </p>
+                <p class="education-place">
+                  <em>University of Cape Town</em>, Cape Town, South Africa
+                </p>
+                <p class="education-description">
+                  Throughout my studies, I focused on acquiring skills in
+                  financial accounting, business finance, and financial
+                  reporting, alongside developing a robust analytical framework
+                  through courses in statistics and data analysis.
+                </p>
+                <p>
+                  The curriculum also covered extensive ground in marketing and
+                  people management, enabling me to understand consumer behavior
+                  and market dynamics effectively. Courses in Information
+                  Systems and Applied Statistics further enhanced my ability to
+                  integrate technology and quantitative analysis in business
+                  decision-making. My education not only provided me with
+                  theoretical knowledge but also stressed practical applications
+                  and problem-solving skills essential for managing and leading
+                  in diverse organizational settings.
+                </p>
+                <ul class="education-list">
+                  <li>
+                    <strong class="intext-strong"
+                      >Statistical Proficiency:
+                    </strong>
+                    Acquired advanced skills in Applied Statistics, including
+                    Multivariate Analysis, enabling data-driven decision-making.
+                  </li>
+                  <li>
+                    <strong class="intext-strong"
+                      >Market Research Expertise:
+                    </strong>
+                    Developed a deep understanding of the consumer market and
+                    honed research skills in Marketing Research, both
+                    quantitative and qualitative.
+                  </li>
+                  <li>
+                    <strong class="intext-strong">Science Background: </strong>
+                    Enhanced critical thinking through courses in Chemistry and
+                    Biology.
+                  </li>
+                  <li>
+                    <strong class="intext-strong">Financial Expertise: </strong>
+                    Gained in-depth knowledge in Financial Accounting, Business
+                    Finance, and Financial Reporting.
+                  </li>
+                  <li>
+                    <strong class="intext-strong">Economic Insights: </strong>
+                    Developed a comprehensive understanding of both
+                    Microeconomics and Macroeconomics.
+                  </li>
+                  <li>
+                    <strong class="intext-strong">Data Analysis: </strong>
+                    Analytical skills in Statistics, including modelling and
+                    forecasting.
+                  </li>
+                  <li>
+                    <strong class="intext-strong">Marketing Expertise: </strong>
+                    Gained insights into Marketing principles and strategies.
+                  </li>
+                  <li>
+                    <strong class="intext-strong">Management Skills: </strong>
+                    Developed proficiency in People Management including
+                    conflict resolution resource management and organisational
+                    theory.
+                  </li>
+                  <li>
+                    <strong class="intext-strong">Problem-Solving: </strong>
+                    Acquired the ability to approach real-world challenges with
+                    evidence-based solutions.
+                  </li>
+                  <li>
+                    <strong class="intext-strong">Information Systems: </strong>
+                    Built a solid foundation in Information Systems gaining the
+                    ability to effectively manage and integrate technology
+                    solutions within business environments to enhance
+                    operational efficiency and decision-making.
+                  </li>
+                </ul>
+              </dd>
+              <hr />
+              <!-- Education > NSC at St Anne's Diocesan College-->
+              <dt class="col-sm-3 education-date">2015</dt>
+              <dd class="col-sm-9">
+                <p class="education-qualification">
+                  <strong>National Senior Certificate (IEB)</strong>
+                </p>
+                <p class="education-place">
+                  <em>St Anne's Diocesan College</em>, Hilton, South Africa
+                </p>
+                <p class="education-description">
+                  I completed my matriculation at St. Anne's Diocesan College,
+                  where I was honored as the Head Girl in 2015. I was selected
+                  to participate in a foreign exchange program at Charlotte
+                  Latin School in North Carolina, USA, in 2013. My academic
+                  pursuits included English Home Language, French Second
+                  Additional Language, Life Orientation, Life Sciences,
+                  Mathematics, Physical Sciences, and isiZulu First Additional
+                  Language. This diverse curriculum not only fortified my
+                  linguistic and scientific skills but also equipped me with a
+                  well-rounded education, preparing me for diverse challenges
+                  and global experiences.
+                </p>
+                <ul class="education-list">
+                  <li>Head Girl for 2015</li>
+                  <li>
+                    Selected for foreign exchange programme to Charlottle Latin
+                    School in North Carolina USA in 2013.
+                  </li>
+                </ul>
+              </dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+      <!-- Download CV Tab-->
+      <div class="accordion-item">
+        <h2 id="headingFiveDownload">
+          <button class="accordion-button collapsed" type="button">
+            Download CV <i class="fa-solid fa-download"></i>
+          </button>
+        </h2>
+      </div>
+    </div>
+
+    <footer></footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
