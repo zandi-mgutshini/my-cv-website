@@ -14,7 +14,7 @@ $(document).ready(function() {
         $(this).removeClass("wiggle");
       });
     // Removes text-muted class on hover
-    $(".text-muted").hover(function() {
+    $(".h5.text-muted").hover(function() {
         $(this).addClass("text-unmuted");
         $(this).removeClass("text-muted");
         }, function() {
