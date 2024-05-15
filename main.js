@@ -13,8 +13,8 @@ $(document).ready(function() {
       }, function() {
         $(this).removeClass("wiggle");
       });
-
-    $(".text-muted").hover(function() {
+    // Removes text-muted class on hover
+    $(".h5.text-muted").hover(function() {
         $(this).addClass("text-unmuted");
         $(this).removeClass("text-muted");
         }, function() {
@@ -22,10 +22,31 @@ $(document).ready(function() {
         $(this).addClass("text-muted");
 
       });
-
+    // Makes icons wiggle on hover
       $(".accordion-button, .github-button, .email-button, .linkedin-button, .behance-button, .quick-download-button").hover(function() {
         $(this).children("i").addClass("wiggle");
       }, function() {
         $(this).children("i").removeClass("wiggle");
       });
+
+      // Add functionality to expand accordion items when professional-button, technical-button, experience-button, and education-button are clicked on.
+      $(".technical-button").click(function(){
+        $("#collapseOne").attr("class", "accordion-collapse collapse show");
+      // Figure out how to collapse other open accordions.
+      })
+
+      $(".professional-button").click(function(){
+        $("#collapseTwo").attr("class", "accordion-collapse collapse show");
+      // Figure out how to collapse other open accordions.
+      })
+
+      $(".experience-button").click(function(){
+        $("#collapseThree").attr("class", "accordion-collapse collapse show");
+      // Figure out how to collapse other open accordions.
+      })
+
+      $(".education-button").click(function(){
+        $("#collapseFour").attr("class", "accordion-collapse collapse show");
+      // Figure out how to collapse other open accordions.
+      })
 });

@@ -15,12 +15,36 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Unbounded", Georgia, sans-serif;
   position: relative;
+  cursor: default;
 }
 
 .text-unmuted {
   color: #A0006D;
   opacity: 0.5;
   cursor: default;
+}
+
+.intext-strong {
+  color: #FBD078;
+}
+
+#technical-skills-grid div,
+#professional-skills-grid div {
+  text-align: left;
+  padding: 5px;
+}
+
+#technical-skills-grid i,
+#professional-skills-grid i {
+  font-size: x-large;
+  color: #4A8BDF;
+  vertical-align: middle;
+}
+
+#technical-skills-grid i:hover,
+#professional-skills-grid i:hover {
+  font-size: x-large;
+  color: #A0006D;
 }
 
 #profilePicture {
@@ -61,6 +85,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 #profilePictureTextContainer {
   padding: 20px 40px;
+  cursor: default;
+}
+
+#profilePictureTextContainer p {
+  font-size: smaller;
 }
 
 .wiggle {
@@ -91,6 +120,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .social-button-container {
   font-size: larger;
+  padding-bottom: 10px;
 }
 
 .social-button-container a {
@@ -102,7 +132,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .github-button:link, .linkedin-button:link, .behance-button:link, .email-button:link,
-.github-button:visited, .linkedin-button:visited, .behance-button:visited, .email-button:visited {
+.github-button:visited, .linkedin-button:visited, .behance-button:visited, .email-button:visited,
+.technical-button:link, .professional-button:link, .education-button:link, .experience-button:link,
+.technical-button:visited, .professional-button:visited, .education-button:visited, .experience-button:visited {
   color: #4A8BDF;
   background-color: rgba(74, 139, 223, 0.2);
   border-radius: 100%;
@@ -129,7 +161,8 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: #20D39E solid 2px;
 }
 
-.github-button:hover, .linkedin-button:hover, .behance-button:hover, .email-button:hover {
+.github-button:hover, .linkedin-button:hover, .behance-button:hover, .email-button:hover,
+.technical-button:hover, .professional-button:hover, .experience-button:hover, .education-button:hover {
   color: #A0006D;
   background-color: rgba(160, 0, 109, 0.1098039216);
   border: transparent solid 2px;
@@ -261,4 +294,21 @@ p.experience-description,
 ul.experience-list {
   margin: 0 auto;
   padding: 0 auto;
+}
+
+#headingFiveDownload a {
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  color: #4A8BDF;
+}
+
+p.last-updated {
+  font-size: smaller;
+  color: #4A8BDF;
+  text-align: center;
+  text-decoration: underline;
+  cursor: default;
 }/*# sourceMappingURL=main.css.map */
