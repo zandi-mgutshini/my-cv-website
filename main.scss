@@ -44,6 +44,29 @@ h1, h2, h3, h4, h5, h6 {
     cursor: default;
 }
 
+.intext-strong {
+    color:$bold-yellow-accent;
+}
+
+#technical-skills-grid div,
+#professional-skills-grid div{
+    text-align: left;
+    padding: 5px ;
+}
+#technical-skills-grid i, 
+#professional-skills-grid i {
+    font-size:x-large;
+    color: $medium-blue-theme;
+    vertical-align: middle;
+
+}
+
+#technical-skills-grid i:hover,
+#professional-skills-grid i:hover {
+    font-size:x-large;
+    color: $bold-red-theme;
+}
+
 #profilePicture {
     text-align: center;
     align-self: normal ;
@@ -121,7 +144,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .github-button:link, .linkedin-button:link, .behance-button:link, .email-button:link,
-.github-button:visited, .linkedin-button:visited, .behance-button:visited, .email-button:visited {
+.github-button:visited, .linkedin-button:visited, .behance-button:visited, .email-button:visited, 
+.technical-button:link, .professional-button:link, .education-button:link, .experience-button:link,
+.technical-button:visited, .professional-button:visited, .education-button:visited, .experience-button:visited {
     color: $medium-blue-theme;
     background-color: $medium-blue-theme-clear;
     border-radius: 100%;
@@ -147,7 +172,8 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom: $bold-green-accent solid 2px;
 } 
 
-.github-button:hover, .linkedin-button:hover, .behance-button:hover, .email-button:hover {
+.github-button:hover, .linkedin-button:hover, .behance-button:hover, .email-button:hover,
+.technical-button:hover, .professional-button:hover, .experience-button:hover, .education-button:hover {
     color: $bold-red-theme;
     background-color: $bold-red-theme-clear;
     border:  transparent solid 2px;
@@ -261,6 +287,7 @@ p.education-qualification {
 p.education-place {
     font-weight: lighter;
 }
+
 // Experience Styling
 .experience-date {
     line-height: 100%;
@@ -282,6 +309,20 @@ ul.experience-list {
     padding: 0 auto;
 }
 
+#headingFiveDownload a {
+    text-decoration: none;
+}
+footer {
+    text-align: center;
+    color: $medium-blue-theme;
+}
+p.last-updated {
+    font-size: smaller;
+    color:$medium-blue-theme;
+    text-align: center;
+    text-decoration: underline;
+    cursor: default;
+}
 
 
 
